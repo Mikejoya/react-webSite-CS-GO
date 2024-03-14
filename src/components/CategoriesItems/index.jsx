@@ -22,7 +22,9 @@ function CategoriesItems() {
             console.log('soy KEYWORD', keyWord);
         }else {
             console.log('soy KEYWORD', keyWord);
-            const filterForItems = items.filter( item => item.weapon === keyWord)
+            const filterForItems = items.filter( item => item.weapon.name === keyWord)
+
+            console.log(filterForItems);
             setFilteredWordWeapon(filterForItems);
             setIsFiltering(true);
         }
@@ -30,11 +32,15 @@ function CategoriesItems() {
 
     const typeWeapon = [];
     items.forEach((type)=> {
+        console.log(type.weapon.name);
         const weapon = type.weapon
-        if(!typeWeapon.includes(weapon)) {
-            typeWeapon.push(weapon);
+        if(!typeWeapon.includes(weapon.name)) {
+            console.log('dddddddddddddddddddd');
+            typeWeapon.push(weapon.name);
         }
     })
+
+console.log(typeWeapon);
 
     function repeatComponent(Component, key) {
         const components = [];
@@ -60,10 +66,14 @@ console.log('REspuestas...', filteredWordWeapon);
                     <ul className={`w-auto overflow-auto text-white ${listType} flex-col gap-1 text-left m-2`}>
                         {typeWeapon.map((type, index) =>{
 
+
                             return <li 
                             key={index}
-                            onClick={()=> filterForWordItems(type.name)}
-                            className='text-black m-2 cursor-pointer list-hover'>{type.name}</ li>
+                            onClick={()=> {
+                                filterForWordItems(type)
+                                setListType('hidden')
+                            }}
+                            className='text-black m-2 cursor-pointer list-hover'>{type}</ li>
                             
                         }
                             )}
