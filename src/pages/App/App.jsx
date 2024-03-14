@@ -9,7 +9,7 @@ import './App.css'
 
 const AppRoutes = ()=> {
   const routes = useRoutes([
-    { path: '/', element: <Home /> },
+    { path: '/react-webSite-CS-GO', element: <Home /> },
     { path: '/articles', element: <ContentItems /> },
     { path: '/articles/pistolas', element: <CategoriesItems /> },
     { path: '/articles/Rifles', element: <CategoriesItems /> },
