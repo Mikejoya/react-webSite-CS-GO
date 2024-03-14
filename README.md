@@ -24,7 +24,6 @@ La página permite filtrar las armas por su tipo, lo que facilita encontrar la i
 ## Capturas de Pantalla
 
 ![Vista de la pagina](src/assets/Screenshot%202024-03-13%20221747.png)
-![Objeto de CS:GO](src/assets/grenade-animation0000-0120.mp4)
 
 ## Contribuciones
 
