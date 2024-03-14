@@ -11,7 +11,7 @@ function Navar() {
     return(
         <div className='nav w-full h-4 flex justify-between items-center p-5 fixed top-0 left-2/4'>
             <figure className='w-auto h-auto'>
-                <NavLink to={'/'}>
+                <NavLink to={'/react-webSite-CS-GO'}>
                     <img className='w-10 h-10 cursor-pointer' src="https://img.icons8.com/color/48/counter-strike.png" alt="counter-strike"/>
                 </NavLink>
             </figure>
