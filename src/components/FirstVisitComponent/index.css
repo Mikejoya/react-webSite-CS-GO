@@ -1,0 +1,12 @@
+.content-first--visit {
+    background-image: url('../../assets/murse-faneca-1440p-css-dvd-styled-cover-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title-responsive {
+    font-size: clamp(48px, 5vw, 76px); 
+}
+.centrar{
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

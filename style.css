@@ -1,0 +1,22 @@
+.line {
+    border: white dashed 1px;
+    animation: borde-movil 5s linear infinite;
+  }
+  
+@keyframes borde-movil {
+  0% {
+    border: 2px solid #f00; /* Ancho: 2px, Color: rojo (posición inicial) */
+  }
+  25% {
+    border: 2px solid #0f0; /* Ancho: 2px, Color: verde (primer cuarto del tiempo) */
+  }
+  50% {
+    border: 2px solid #00f; /* Ancho: 2px, Color: azul (mitad del tiempo) */
+  }
+  75% {
+    border: 2px solid #f0f; /* Ancho: 2px, Color: morado (último cuarto del tiempo) */
+  }
+  100% {
+    border: 2px solid #f00; /* Ancho: 2px, Color: rojo (vuelve a la posición inicial) */
+  }
+}
